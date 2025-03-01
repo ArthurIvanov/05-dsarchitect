@@ -14,7 +14,7 @@ export const typography = {
 		h6: "16px",
 		base: "16px",
 		small: "14px",
-		caption: "12px",
+		extraSmall: "12px",
 	},
 
 	lineHeight: {
@@ -26,7 +26,7 @@ export const typography = {
 		h6: "24px",
 		base: "24px",
 		small: "20px",
-		caption: "16px",
+		extraSmall: "16px",
 	},
 
 	fontWeight: {
