@@ -337,7 +337,7 @@ export const lightTheme: DefaultTheme = {
 	},
 	spacing: {
 		inner: {
-			noGap: spacers[0],
+			noGap: spacers.none,
 			closest: spacers[2],
 			close: spacers[4],
 			related: spacers[8],
