@@ -1,4 +1,4 @@
-import { colors, spacing, zIndices, typography } from "./tokens";
+import { colors, spacers, zIndices, typography } from "./tokens";
 
 export const lightTheme = {
 	colors: {
@@ -22,39 +22,39 @@ export const lightTheme = {
 		},
 	},
 
-	spacing: {
+	spacers: {
 		inner: {
 			noGap: 0,
-			closest: spacing[2],
-			close: spacing[4],
-			related: spacing[8],
-			grouped: spacing[16],
+			closest: spacers[2],
+			close: spacers[4],
+			related: spacers[8],
+			grouped: spacers[16],
 		},
 
 		outer: {
-			close: spacing[4],
-			related: spacing[8],
-			grouped: spacing[16],
-			subSection: spacing[24],
-			section: spacing[48],
+			close: spacers[4],
+			related: spacers[8],
+			grouped: spacers[16],
+			subSection: spacers[24],
+			section: spacers[48],
 		},
 
 		paddings: {
-			compact: spacing[8],
-			default: spacing[16],
-			relaxed: spacing[24],
-			large: spacing[32],
+			compact: spacers[8],
+			default: spacers[16],
+			relaxed: spacers[24],
+			large: spacers[32],
 		},
 
 		height: {
-			xxxSmall: spacing[4],
-			xxSmall: spacing[8],
-			xSmall: spacing[16],
-			small: spacing[24],
-			base: spacing[40],
-			large: spacing[48],
-			xLarge: spacing[56],
-			xxLarge: spacing[64],
+			xxxSmall: spacers[4],
+			xxSmall: spacers[8],
+			xSmall: spacers[16],
+			small: spacers[24],
+			base: spacers[40],
+			large: spacers[48],
+			xLarge: spacers[56],
+			xxLarge: spacers[64],
 		},
 	},
 
@@ -108,12 +108,12 @@ export const lightTheme = {
 	},
 
 	cornerRadius: {
-		projectBase: spacing[1],
-		micro: spacing[2],
-		componentInner: spacing[4],
-		componentBase: spacing[8],
-		sectionInner: spacing[16],
-		sectionBase: spacing[24],
+		projectBase: spacers[1],
+		micro: spacers[2],
+		componentInner: spacers[4],
+		componentBase: spacers[8],
+		sectionInner: spacers[16],
+		sectionBase: spacers[24],
 	},
 
 	zIndices: {
