@@ -4,7 +4,7 @@ export const lightTheme = {
 	colors: {
 		bg: {
 			calm: {
-				section: colors.white,
+				section: colors.base.white,
 				global: colors.grey[50],
 				disabled: colors.grey[100],
 			},

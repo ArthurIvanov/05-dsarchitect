@@ -1,18 +1,18 @@
 import React from "react";
-import { GlobalStyle } from "./lib/theme";
-import { Placeholder } from "./lib/placeholder";
-import { Spinner } from "./lib";
+import { GlobalStyle, lightTheme, darkTheme } from "./lib";
+import { Button, Icon } from "./lib";
+import { ThemeProvider } from "styled-components";
 
 function App() {
-	const switcher = false;
+	const isDarkTheme = false;
 	return (
-		<>
+		<ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
 			<GlobalStyle />
 			<main>
-				<Spinner size="base" />
-				<Placeholder text="Привет 5-й поток!" />
+				<Button size="base" iconBefore="chevronDown" text="Привет!" />
+				<Button appearance="secondary" size="small" disabled />
 			</main>
-		</>
+		</ThemeProvider>
 	);
 }
 

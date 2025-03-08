@@ -16,9 +16,7 @@ interface ISpinnerProps {
 }
 
 const StyledSpinner = styled.div<ISpinnerProps>`
-	display: flex;
-	width: ${(props) => props.size};
-	height: ${(props) => props.size};
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 

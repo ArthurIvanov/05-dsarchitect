@@ -26,7 +26,7 @@ export const lightTheme: DefaultTheme = {
 				loud: {
 					enabled: colors.blue[400],
 					hover: colors.blue[500],
-					active: colors.blue[200],
+					active: colors.blue[600],
 				},
 				loudStatic: {
 					enabled: colors.blue[400],
@@ -43,7 +43,7 @@ export const lightTheme: DefaultTheme = {
 				loud: {
 					enabled: colors.green[400],
 					hover: colors.green[500],
-					active: colors.green[200],
+					active: colors.green[600],
 				},
 				bold: {
 					enabled: colors.green[500],
@@ -60,7 +60,7 @@ export const lightTheme: DefaultTheme = {
 				loud: {
 					enabled: colors.cyan[400],
 					hover: colors.cyan[500],
-					active: colors.cyan[200],
+					active: colors.cyan[600],
 				},
 				bold: {
 					enabled: colors.cyan[500],
@@ -77,7 +77,7 @@ export const lightTheme: DefaultTheme = {
 				loud: {
 					enabled: colors.blue[400],
 					hover: colors.blue[500],
-					active: colors.blue[200],
+					active: colors.blue[600],
 				},
 				bold: {
 					enabled: colors.blue[500],
@@ -94,7 +94,7 @@ export const lightTheme: DefaultTheme = {
 				loud: {
 					enabled: colors.pink[400],
 					hover: colors.pink[500],
-					active: colors.pink[200],
+					active: colors.pink[600],
 				},
 				bold: {
 					enabled: colors.pink[500],
@@ -285,8 +285,8 @@ export const lightTheme: DefaultTheme = {
 	},
 	typography: {
 		fontFamily: {
-			heading: `"Fira Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
-			text: `"Fira Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+			heading: `Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+			text: `Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
 			monospace: `'SFMono-Medium', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace`,
 		},
 		fontSize: {
@@ -403,7 +403,7 @@ export const darkTheme: DefaultTheme = {
 					darkStatic: colors.grey[800],
 				},
 				global: {
-					calm: colors.grey[50],
+					calm: colors.grey[900],
 				},
 			},
 			lead: {
