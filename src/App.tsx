@@ -4,13 +4,16 @@ import { Button, Icon } from "./lib";
 import { ThemeProvider } from "styled-components";
 
 function App() {
-	const isDarkTheme = false;
+	const isDarkTheme = true;
 	return (
 		<ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
 			<GlobalStyle />
 			<main>
-				<Button size="base" iconBefore="chevronDown" text="Привет!" />
-				<Button appearance="secondary" size="small" disabled />
+				<Button size="base" text="Primary" />
+				<Button appearance="secondary" size="base" text="Secondary" />
+				<Button appearance="onDark" size="base" text="onDark" />
+				<Button appearance="onLight" size="base" text="onLight" />
+				<Button appearance="inverted" size="base" text="Inverted" />
 			</main>
 		</ThemeProvider>
 	);

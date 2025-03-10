@@ -7,6 +7,7 @@ type TSize = "base" | "small";
 interface IButtonProps {
 	appearance?: TAppearance;
 	size: TSize;
+	// @todo make a loading prop
 	loading?: boolean;
 	disabled?: boolean;
 	iconBefore?: string;
@@ -92,7 +93,73 @@ const StyledButton = styled.button<IButtonProps>`
             &:active {
             background-color: ${props.theme.colors.bg.neutral.section.calm};
             border-color: ${props.theme.colors.border.lead.loud.active};
-            color: ${props.theme.colors.link.loud.active};
+            color: ${props.theme.colors.link.onDark.active};
+        }
+        `}
+
+        ${(props) =>
+			props.appearance === "onLight" &&
+			`
+            &:enabled {
+            background-color: transparent;
+            border-color: ${props.theme.colors.border.lead.onLight.enabled};
+            color: ${props.theme.colors.link.onLight.enabled};
+            }
+
+            &:hover {
+            background-color: transparent;
+            border-color: ${props.theme.colors.border.lead.onLight.hover};
+            color: ${props.theme.colors.link.onLight.hover};
+            }
+
+            &:active {
+            background-color: transparent;
+            border-color: ${props.theme.colors.border.lead.onLight.active};
+            color: ${props.theme.colors.link.onLight.active};
+        }
+        `}
+
+         ${(props) =>
+				props.appearance === "onDark" &&
+				`
+            &:enabled {
+            background-color: transparent;
+            border-color: ${props.theme.colors.border.lead.onDark.enabled};
+            color: ${props.theme.colors.link.onDark.enabled};
+            }
+
+            &:hover {
+            background-color: transparent;
+            border-color: ${props.theme.colors.border.lead.onDark.hover};
+            color: ${props.theme.colors.link.onDark.hover};
+            }
+
+            &:active {
+            background-color: transparent;
+            border-color: ${props.theme.colors.border.lead.onDark.active};
+            color: ${props.theme.colors.link.onDark.active};
+        }
+        `}
+
+        ${(props) =>
+			props.appearance === "inverted" &&
+			`
+            &:enabled {
+            background-color: transparent;
+            border-color: ${props.theme.colors.border.lead.inverted.enabled};
+            color: ${props.theme.colors.link.inverted.enabled};
+            }
+
+            &:hover {
+            background-color: transparent;
+            border-color: ${props.theme.colors.border.lead.inverted.hover};
+            color: ${props.theme.colors.link.inverted.hover};
+            }
+
+            &:active {
+            background-color: transparent;
+            border-color: ${props.theme.colors.border.lead.inverted.active};
+            color: ${props.theme.colors.link.inverted.active};
         }
         `}
 
