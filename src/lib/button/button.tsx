@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Icon } from "../icon";
+import { Icon, iconsType } from "../icon";
 
 type TAppearance = "primary" | "secondary" | "onDark" | "onLight" | "inverted";
 type TSize = "base" | "small";
@@ -10,8 +10,8 @@ interface IButtonProps {
 	// @todo make a loading prop
 	loading?: boolean;
 	disabled?: boolean;
-	iconBefore?: string;
-	iconAfter?: string;
+	iconBefore?: iconsType;
+	iconAfter?: iconsType;
 	text?: string;
 }
 
