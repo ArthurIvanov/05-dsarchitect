@@ -25,3 +25,4 @@ dist-ssr
 
 # local files
 .todo.txt
+storybook-static

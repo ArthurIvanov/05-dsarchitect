@@ -367,5 +367,6 @@ declare module "styled-components" {
 				notifications: string;
 			};
 		};
+		focus: string;
 	}
 }

@@ -2,17 +2,20 @@ import styled from "styled-components";
 
 interface IBadgeProps {
 	/**
-	 * Наполнение текстом
+	 * Наполнение текстом (обязательное поле)
 	 */
 	text: string;
+
 	/**
 	 * Размер компонента
 	 */
 	size?: "base" | "small";
+
 	/**
 	 * Визуальный вес компонента
 	 */
 	appearance?: "blue" | "cyan" | "green" | "pink" | "grey";
+
 	/**
 	 * Переключает компонент в менее акцентный вид
 	 */
@@ -71,15 +74,16 @@ const StyledBadge = styled.div<IBadgeProps>`
             
             `}
 `;
-
 /**
- * Конпонент отвечает за дополнительное описание новости либо другой информации
+ *
+ * Используется для цветового разграничения контента
+ *
  */
 export const Badge: React.FC<IBadgeProps> = ({
-	text,
+	text = "Hello badge",
 	size = "small",
 	appearance = "grey",
-	outlined,
+	outlined = false,
 }) => {
 	return (
 		<StyledBadge

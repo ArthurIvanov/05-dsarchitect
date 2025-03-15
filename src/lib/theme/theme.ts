@@ -387,6 +387,7 @@ export const lightTheme: DefaultTheme = {
 			notifications: `0px 2px 24px rgba(34, 49, 69, 0.16)`,
 		},
 	},
+	focus: `0px 0px 0px 2px rgba(79, 96, 255, 0.25)`,
 };
 
 export const darkTheme: DefaultTheme = {

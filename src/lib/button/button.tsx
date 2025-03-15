@@ -26,6 +26,9 @@ const StyledButton = styled.button<IButtonProps>`
     transition: 0.2s ease;
     padding: unset;
     gap: ${(props) => props.theme.spacing.inner.close};
+    &:focus {
+    box-shadow: ${(props) => props.theme.focus};
+    }
 
    
 
